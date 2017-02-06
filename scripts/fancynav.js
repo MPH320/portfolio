@@ -5,7 +5,7 @@ $(document).ready(function() {
   var active3 = false;
   var active4 = false;
 
-    $('.mobile-nav-wrapper').on('mousedown touchstart', function() {
+    $('.mobile-nav-wrapper').click(function() {
     
     if (!active1) $(this).find('.sphere-1').css({ 'transform': 'translate(0px,65px)'});
     else $(this).find('.sphere-1').css({'transform': 'none'}); 
