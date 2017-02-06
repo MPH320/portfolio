@@ -1,0 +1,234 @@
+html {    
+  height:100%;
+  background-color: rgb(40, 40, 40);
+}
+
+#feedback-page {
+	text-align:center;
+    
+}
+
+#form-main {
+	width:100%;
+	float:left;
+}
+
+#form-div {
+    margin-top:50px;
+	width: 450px;
+	float: left;
+	left: 40%;
+	position: absolute;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+}
+
+.feedback-input { 
+	color:#3c3c3c;
+	font-family: Helvetica, Arial, sans-serif;
+    font-weight:500;
+	font-size: 18px;
+	border-radius: 0;
+	line-height: 22px;
+	background-color: #fbfbfb;
+	padding: 13px 13px 13px 54px;
+	margin-bottom: 10px;
+	width:100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+    border: 1px solid rgba(0,0,0,0);
+}
+
+.feedback-input:focus {
+	background: #fff;
+	box-shadow: 0;
+	border: 3px solid #3498db;
+	color: #3498db;
+	outline: none;
+    padding: 13px 13px 13px 54px;
+}
+
+.focused {
+	color:#30aed6;
+	border:#30aed6 solid 3px;
+}
+
+/* Icons ---------------------------------- */
+
+#name {
+    border: 1px solid rgb(3, 150, 252);
+	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+    border-radius: 5px;
+}
+
+#name:hover {
+    transform:scale(.99,.99);
+    -webkit-transform:scale(.99,.99); 
+    -moz-transform:scale(.99,.99); 
+    -ms-transform:scale(.99,.99); 
+    -o-transform:scale(.99,.99);
+}
+
+#name:focus {
+	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+	background-size: 30px 30px;
+	background-position: 8px 5px;
+    background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#email {
+    border-radius: 5px;
+    border: 1px solid rgb(3, 150, 252);
+	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#email:hover {
+    transform:scale(.99,.99);
+    -webkit-transform:scale(.99,.99); 
+    -moz-transform:scale(.99,.99); 
+    -ms-transform:scale(.99,.99); 
+    -o-transform:scale(.99,.99); 
+}
+
+#email:focus {
+	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+	background-size: 30px 30px;
+    background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#comment {
+    border-radius: 5px;
+    border: 1px solid rgb(3, 150, 252);
+	background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#comment:hover {
+    transform:scale(.99,.99);
+    -webkit-transform:scale(.99,.99); 
+    -moz-transform:scale(.99,.99); 
+    -ms-transform:scale(.99,.99); 
+    -o-transform:scale(.99,.99); 
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    line-height: 150%;
+    resize:vertical;
+}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+	background-color:white;
+}
+
+#button-blue {
+    border-radius: 1px;
+	float:left;
+	width: 100%;
+	border: #fbfbfb solid 4px;
+    cursor:pointer;
+	background-color: #3498db;
+	color:white;
+	font-size:24px;
+	padding-top:22px;
+	padding-bottom:22px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+    font-weight:700;
+    margin-top:-3px;
+}
+
+#button-blue:hover {
+	background-color: rgba(0,0,0,0);
+	color: #0493bd;
+}
+	
+.submit:hover {
+	color: #0493bd;
+    background-color: rgba(0,0,0,0);
+}
+	
+.ease {
+	width: 0px;
+	height: 75px;
+	background-color: #fbfbfb;
+	-webkit-transition: .3s ease;
+	-moz-transition: .3s ease;
+	-o-transition: .3s ease;
+	-ms-transition: .3s ease;
+	transition: .3s ease;
+}
+
+.submit:hover .ease {
+  width:100%;
+  background-color:white;
+}
+
+.mobile-nav-wrapper {
+    z-index: 1;
+}
+
+@media (max-width: 800px) {
+	#form-div {
+	   left: 37.5%;
+		width: 60%;
+        margin-top:50px;
+	}
+}
+
+@media (max-height: 530px) {
+    #name {
+        display:none;
+    }
+}
+
+@media (max-height: 450px) {
+    #email {
+        display:none;
+    }
+}
+
+@media (max-width: 300px) {
+    .mobilenav {
+        display: none;
+    }
+    
+    #form-div {
+        left: 10%;
+        width: 80%;
+        margin-top:10%;
+	}
+}
+
+@media (max-width: 185px) {
+    ::-webkit-input-placeholder {
+        color:white;
+    }
+
+    :-moz-placeholder {
+        color:white;
+    }
+
+    ::-moz-placeholder { 
+        color:white;
+    }
+
+    :-ms-input-placeholder {  
+        color:white;
+    }   
+}

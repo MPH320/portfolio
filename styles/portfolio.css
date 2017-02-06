@@ -1,0 +1,153 @@
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.home {
+    display:none;
+    top:20px;
+    left:20px;
+    width:40px;
+    height:40px;
+    background:rgb(3, 150, 252);
+    border-radius:50%;
+    position:absolute;
+    font-size: 2em;
+    color: white;
+    text-align:center;
+    cursor:pointer;
+    position:fixed;
+}
+
+.home:hover {
+    background:black;
+    color:rgb(3, 150, 252);;
+}
+
+h1.portfolio {
+    display: flex;
+    justify-content: center;
+    color: rgb(3, 150, 252);
+    font-size: 4em;
+    position:absolute;
+    top: 10%;
+    margin-top: 0;
+    width: 90%;
+    left: 5%;
+}
+
+h2.portfolio {
+    display: flex;
+    font-size: 1.5em;
+    justify-content: center;
+    color: black;
+    position:absolute;
+    top: 30%;
+    height:37%;
+    width: 80%;
+    left:10%;
+}
+
+.one, .two, .three {
+    width:150px;
+    height:150px;
+}
+
+#my-Canvas {
+    position:fixed;
+    z-index: -1;
+    top:0px;
+    right:0px;
+}
+
+.mobile-nav {
+    display: block;
+    color: white;
+}
+
+.mobile-nav:hover {
+    color:rgb(3, 150, 252);    
+}
+
+.sphere-mask {
+    background-color: rgb(3, 150, 252)
+}
+
+.sphere-mask:hover {
+    background-color: black;
+}
+
+ul.portfolio  {
+    right:0px;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    background-color: #333;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 4.5em;
+}
+
+li.portfolio {
+    float: left;
+}
+
+li a.portfolio {
+    display: flex;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+li a.portfolio:hover:not(.active) {
+    background-color: #111;
+}
+
+.active .portfolio {
+    background-color: #4CAF50;
+}
+
+.next, .last {
+    margin-top: 50px;
+    padding-top: 50px;
+}
+
+@media (max-height: 500px) {
+    ul.portfolio {
+        display: none;
+    }
+}
+
+@media (max-width: 620px) {
+    .two {
+        display: none;
+    }
+    
+    .mobile-nav {
+        display: none;
+    }
+    
+    .home {
+        display:block;
+    }
+
+    h2.portfolio {
+        width: 90%;
+        left:5%;
+    }
+}
+
+@media (max-width: 460px) {
+    .one, .three {
+        display: none;
+    }
+    
+    h1.portfolio {
+        font-size: 3em;
+    }
+    
+    h2.portfolio {
+        font-size: 1;
+    }
+}
