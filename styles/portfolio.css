@@ -11,11 +11,12 @@ body {
     background:rgb(3, 150, 252);
     border-radius:50%;
     position:absolute;
-    font-size: 2em;
+    font-size: 1.5em;
     color: white;
     text-align:center;
     cursor:pointer;
     position:fixed;
+    line-height: 40px;
 }
 
 .home:hover {
@@ -55,8 +56,8 @@ h2.portfolio {
 #my-Canvas {
     position:fixed;
     z-index: -1;
-    top:0px;
-    right:0px;
+    top:0;
+    right:0;
 }
 
 .mobile-nav {
@@ -84,7 +85,8 @@ ul.portfolio  {
     margin: 0;
     background-color: #333;
     position: fixed;
-    bottom: 0;
+    bottom:0;
+    height: 150px;
     width: 100%;
     font-size: 4.5em;
 }
@@ -108,9 +110,23 @@ li a.portfolio:hover:not(.active) {
     background-color: #4CAF50;
 }
 
+.next{}
+
+.last{
+    margin-left: -28px;
+}
+
+.next{
+    margin-left: 2px;
+}
 .next, .last {
-    margin-top: 50px;
-    padding-top: 50px;
+    color: white;
+    position:absolute;
+    display: flex;
+    justify-content: center;
+    padding-top: 39px;
+    padding-bottom: 39px;
+    
 }
 
 @media (max-height: 500px) {
