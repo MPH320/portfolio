@@ -110,8 +110,6 @@ li a.portfolio:hover:not(.active) {
     background-color: #4CAF50;
 }
 
-.next{}
-
 .last{
     margin-left: -28px;
 }
@@ -119,6 +117,7 @@ li a.portfolio:hover:not(.active) {
 .next{
     margin-left: 2px;
 }
+
 .next, .last {
     color: white;
     position:absolute;
@@ -157,6 +156,14 @@ li a.portfolio:hover:not(.active) {
 @media (max-width: 460px) {
     .one, .three {
         display: none;
+    }
+    
+    .last{
+        left:69px;
+    }
+
+    .next{
+        right:2px;
     }
     
     h1.portfolio {

@@ -16,7 +16,7 @@ var itemOne = {
 var itemTwo = {
     title: 'Camp Roanoke',
     description: 'Sit an semper iriure fierent. Ne eam utinam democritum. Per diam clita ne. Sea et timeam pericula.',
-    artURL: 'assets/images/roanoke.png',
+    artURL: 'assets/images/roanoke.jpg',
     pageURL: 'portfolio.html?Roanoke'
 }
 
