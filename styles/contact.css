@@ -135,6 +135,8 @@ input:focus, textarea:focus {
 	background-color:white;
 }
 
+
+
 #button-blue {
     border-radius: 1px;
 	float:left;
@@ -151,6 +153,8 @@ input:focus, textarea:focus {
 	transition: all 0.3s;
     font-weight:700;
     margin-top:-3px;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
 }
 
 #button-blue:hover {
