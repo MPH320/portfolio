@@ -8,9 +8,20 @@ $(document).ready(function() {
     var $sphere1 = $('.sphere-1');
     var $sphere2 = $('.sphere-2');
     var $sphere3 = $('.sphere-3');
+    var $sphere4 = $('.sphere-mask');
+    
+    $sphere4.hover(function() {
+            $(this).css({ 'background-color':'black'});
+        }, function() {
+            $(this).css({'background-color':'white'});
+        })
+    
 
     $('.mobile-nav-wrapper').click(function() {
         
+        
+        if (!active4) $sphere4.css({ 'background-color':'black'});
+        else $sphere4.css({'background-color':'white'});  
         
         if ( $('.sphere-3').length ) {
             
@@ -26,6 +37,7 @@ $(document).ready(function() {
             active1 = !active1;
             active2 = !active2;
             active3 = !active3;
+            active4 = !active4;
             
         } 
         else {
@@ -38,6 +50,7 @@ $(document).ready(function() {
             active1 = !active1;
             active2 = !active2;
             active3 = !active3;
+            active4 = !active4;
         }
     
     
