@@ -1,18 +1,19 @@
-var stopAnimation = function(thing) {
-      $('span').on('animationend oanimationend webkitAnimationEnd', function () {
-          $(this).removeClass('animated bazinga');
-      });
-}
-
 var addSpans = function(thing) 
 {
-	thing.find("span").hover
+	thing.find(".letter").hover
     (
         function() 
         {
-            $( this ).addClass('animated bazinga');
-        }, function() {
-            stopAnimation(this);
+            var $thisLetter = $( this );
+            
+            $thisLetter.addClass('animated bazinga');
+            
+            setTimeout(function(){ 
+
+                $thisLetter.removeClass('animated bazinga');
+
+            }, 1000);
+              
         }
     );
 }
@@ -23,7 +24,7 @@ $(document).ready(function()
     
     $textToAnimate.each(function( index ) 
     {    
-        $( this ).html( $( this ).html().replace(/./g, "<span>$&</span>").replace(/\s/g, " "));
+        $( this ).html( $( this ).html().replace(/./g, "<span class=\"letter\">$&</span>").replace(/\s/g, " "));
         addSpans($( this ));
     });
     

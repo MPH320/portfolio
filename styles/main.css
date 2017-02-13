@@ -114,11 +114,16 @@ a:hover .work-text, a:hover .home-text, a:hover .contact-text {
     left: 10%;
 }
 
+
 .greeting > h2 {
     font-size: 3em;
     position: fixed;
     bottom: 30%;
     right: 20%;
+}
+
+.color-blue {
+    color: rgb(3, 150, 252);
 }
 
 .bazinga.animated {

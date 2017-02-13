@@ -159,11 +159,11 @@ li a.portfolio:hover:not(.active) {
     }
     
     .last{
-        left:69px;
+        left:99px;
     }
 
     .next{
-        right:2px;
+        right:32px;
     }
     
     h1.portfolio {
