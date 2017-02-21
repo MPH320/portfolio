@@ -8,22 +8,22 @@ getit = unescape(getit[1]);
 
 var itemOne = {
     title: 'Bloc-Jams',
-    description: 'Lorem ipsum dolor sit amet, usu dicant tacimates dissentias ne, mei error principes no. Nulla consulatu suscipiantur mea eu, modo voluptatum ut mel. Dicat commodo adolescens te duo. Eam ut ubique appareat reprimique, ubique accumsan phaedrum no cum. Mei mollis aperiam eruditi no, movet noluisse his eu.',
+    description: 'A digital music player built with jQuery, javascript, html and css.',
     artURL: 'assets/images/bloc-jams.png',
     pageURL: 'portfolio.html?Jams'
 }
 
 var itemTwo = {
     title: 'Camp Roanoke',
-    description: 'Sit an semper iriure fierent. Ne eam utinam democritum. Per diam clita ne. Sea et timeam pericula.',
+    description: 'A procedurally generated brawler for up to four players.',
     artURL: 'assets/images/roanoke.jpg',
     pageURL: 'portfolio.html?Roanoke'
 }
 
 var itemThree = {
-    title: 'Three',
-    description: 'Labore malorum lobortis eum in, mel ex dicat utroque invenire, quando periculis qui id. Duo minim accusamus in. Unum dicunt mediocritatem cum id, pri in omittam tractatos abhorreant. Ea enim quaeque mea.',
-    artURL: 'assets/images/thumbs/3.png',
+    title: 'Bloc-Jams-Angular',
+    description: 'Bloc Jams rebuilt using angular.',
+    artURL: 'assets/images/bloc_jams_angular.png',
     pageURL: 'portfolio.html?3'
 }
 
