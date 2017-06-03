@@ -297,7 +297,7 @@ a:hover .work-text, a:hover .home-text, a:hover .contact-text {
     
      .animated-text.hidden {
         display:block;
-        
+        left: 0%;
         bottom: 65%;
     }
     
@@ -377,7 +377,7 @@ a:hover .work-text, a:hover .home-text, a:hover .contact-text {
     }
     
     .greeting > h2{
-         display: block;
+        display: block;
         bottom: 10%;
         left: 15%;
     }

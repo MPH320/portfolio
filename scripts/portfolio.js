@@ -7,38 +7,38 @@ getit=string.split("?");
 getit = unescape(getit[1]);
 
 var itemOne = {
-    title: 'Bloc-Jams',
-    description: 'A digital music player built with jQuery, javascript, html and css.',
-    artURL: 'assets/images/bloc-jams.png',
-    pageURL: 'portfolio.html?Jams'
+    title: 'Bloccit',
+    description: 'Reddit clone built using ruby on rails.',
+    artURL: 'assets/images/bloccit.jpg',
+    pageURL: 'portfolio.html?bloccit'
 }
 
 var itemTwo = {
-    title: 'Camp Roanoke',
-    description: 'A procedurally generated brawler for up to four players.',
-    artURL: 'assets/images/roanoke.jpg',
-    pageURL: 'portfolio.html?Roanoke'
+    title: 'Bloc-Jams-Angular',
+    description: 'A music app built using angular.',
+    artURL: 'assets/images/angular-jams.png',
+    pageURL: 'portfolio.html?angularjams'
 }
 
 var itemThree = {
-    title: 'Bloc-Jams-Angular',
-    description: 'Bloc Jams rebuilt using angular.',
-    artURL: 'assets/images/bloc_jams_angular.png',
-    pageURL: 'portfolio.html?3'
+    title: 'Pong',
+    description: 'Pong made with javascript animations.',
+    artURL: 'assets/images/pong.jpg',
+    pageURL: 'portfolio.html?pong'
 }
 
 var itemFour = {
-    title: 'Four',
-    description: 'TSit ex vocibus legendos. Sed id liber atomorum. Dicat sapientem no eum. Mei prima definiebas eu, mel graecis corpora honestatis eu.',
-    artURL: 'assets/images/thumbs/4.png',
-    pageURL: 'portfolio.html?4'
+    title: 'Bloc-Jams',
+    description: 'A digital music player built with jQuery, javascript, html and css.',
+    artURL: 'assets/images/bloc-jams.png',
+    pageURL: 'portfolio.html?jams'
 }
 
 var itemFive = {
-    title: 'Five',
-    description: 'Melius blandit nec ex. Qui omnes scaevola in, noster verterem quaerendum ut nam. At mel solet iracundia. Mel eu propriae iracundia, eum tation laoreet id. Iuvaret instructior id pro, ea per nisl offendit ocurreret.',
+		title: 'Five',
+    description: 'Lorem ipsum dolor sit amet, usu at aliquip consequat posidonium, possim eruditi dignissim vim ad. Ut sea verear expetenda maluisset, no mollis dolores conclusionemque mel. Duo in quaestio delicata. Quo ut propriae tractatos consequat, at vix porro dolores mandamus.',
     artURL: 'assets/images/thumbs/5.png',
-    pageURL: 'portfolio.html?5'
+    pageURL: 'portfolio.html?0'
 }
 
 var itemSix = {
@@ -130,13 +130,21 @@ var lastLink = function () {
 
 var setActive = function(){
     
-    if (getit == "Jams")
+    if (getit == "Bloccit")
     {
         lastItem = 1;
     }
-    else if(getit == "Roanoke")
+    else if(getit == "AngularJams")
     {
         lastItem = 2;
+    }
+	else if(getit == "Pong")
+    {
+        lastItem = 3;
+    }
+	 else if(getit == "Jams")
+    {
+        lastItem = 4;
     }
     else {
         lastItem = getit;

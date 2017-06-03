@@ -85,7 +85,20 @@ a {
     .cell {
         width: 40%;
     }
+	
+
 }
+
+@media (max-width: 600px) {
+
+	.container {
+  		margin-left: 10px;
+			margin-top: 65px;
+		}
+
+}
+
+		
 
 @media (min-width: 1000px) {
     .cell {
