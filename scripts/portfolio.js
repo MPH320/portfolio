@@ -36,7 +36,7 @@ var itemFour = {
 
 var itemFive = {
 		title: 'Five',
-    description: 'Lorem ipsum dolor sit amet, usu at aliquip consequat posidonium, possim eruditi dignissim vim ad. Ut sea verear expetenda maluisset, no mollis dolores conclusionemque mel. Duo in quaestio delicata. Quo ut propriae tractatos consequat, at vix porro dolores mandamus.',
+    description: 'Lorem ipsum dolor sit amet, usu at aliquip consequat posidonium, possim eruditi dignissim vim ad. Ut sea verear expetenda maluisset, no mollis dolores conclusionemque mel.',
     artURL: 'assets/images/thumbs/5.png',
     pageURL: 'portfolio.html?0'
 }
@@ -56,6 +56,8 @@ var lastItem;
 
 var changeItems = function(){
     
+	console.log(lastItem);
+	
     if(lastItem==1)
     {
         middleItem = lastItem-1;
@@ -77,6 +79,7 @@ var changeItems = function(){
     
     $('h1.portfolio').text(items[middleItem].title);
     $('h2.portfolio').text(items[middleItem].description);
+		$('.portfolio-img').attr("src", items[middleItem].artURL);
 }
 
 var last = function(){
@@ -129,8 +132,10 @@ var lastLink = function () {
 }
 
 var setActive = function(){
+	
+		console.log("Hey");
     
-    if (getit == "Bloccit")
+    if (getit == "Bloccit" || getit)
     {
         lastItem = 1;
     }
@@ -148,6 +153,7 @@ var setActive = function(){
     }
     else {
         lastItem = getit;
+			
     }
 }
 

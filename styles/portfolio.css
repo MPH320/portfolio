@@ -42,10 +42,23 @@ h2.portfolio {
     justify-content: center;
     color: black;
     position:absolute;
-    top: 30%;
+    top: 20%;
     height:37%;
     width: 80%;
     left:10%;
+}
+
+.portfolio-img {
+  position: fixed;
+	width: 200px;
+	height: 200px;
+  top: 50%;
+  left: 50%;  
+	transform: translate(-50%, -50%);
+	-webkit-transform:translate(-50%, -50%); 
+	-moz-transform:translate(-50%, -50%); 
+	-ms-transform:translate(-50%, -50%); 
+	-o-transform:translate(-50%, -50%);
 }
 
 .one, .two, .three {
@@ -128,11 +141,44 @@ li a.portfolio:hover:not(.active) {
     
 }
 
-@media (max-height: 500px) {
-    ul.portfolio {
-        display: none;
-    }
+@media (max-height: 730px) {
+
+
+	.portfolio-img {
+		top: 60%;
+		height: 150px;
+		width: 150px;
+	}
+	
+
 }
+
+@media (max-height: 650px) {
+
+
+	.portfolio-img {
+	
+	}
+	
+
+}
+
+
+@media (max-height: 500px) {
+	ul.portfolio {
+	display: none;
+	}
+
+	.portfolio-img {
+		top: 70%;
+	}
+	
+	h2.portfolio {
+		top: 30%;
+
+	}
+}
+
 
 @media (max-width: 620px) {
     .two {
@@ -152,6 +198,8 @@ li a.portfolio:hover:not(.active) {
         left:5%;
     }
 }
+	
+
 
 @media (max-width: 460px) {
     .one, .three {
@@ -159,11 +207,11 @@ li a.portfolio:hover:not(.active) {
     }
     
     .last{
-        left:99px;
+        left:169px;
     }
 
     .next{
-        right:32px;
+        right:102px;
     }
     
     h1.portfolio {
