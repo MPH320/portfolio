@@ -287,7 +287,7 @@ a:hover .work-text, a:hover .home-text, a:hover .contact-text {
 
 @media ( max-width: 400px ){
     .greeting > h1{
-        
+      	top: -4%;
         left: 45%;
     }
     
@@ -297,7 +297,7 @@ a:hover .work-text, a:hover .home-text, a:hover .contact-text {
     
      .animated-text.hidden {
         display:block;
-        left: 0%;
+        left: 5%;
         bottom: 65%;
     }
     
@@ -332,6 +332,10 @@ a:hover .work-text, a:hover .home-text, a:hover .contact-text {
     .greeting > h2{
         display: none;
     }
+	
+	.animated-text.hidden {
+        display: block;
+    } 
 }
 
 @media (max-height: 330px) and (max-width: 500px) {    
@@ -405,4 +409,15 @@ a:hover .work-text, a:hover .home-text, a:hover .contact-text {
     .animated-text.hidden {
         display: none;
     }
+}
+
+@media (min-height: 360px) and (max-width: 500px) {
+    .greeting > h1 + h2{
+       display: none;
+			 color:green;
+    }
+	
+	.animated-text.hidden {
+        display: block;
+    } 
 }
