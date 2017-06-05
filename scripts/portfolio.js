@@ -10,42 +10,48 @@ var itemOne = {
     title: 'Bloccit',
     description: 'Reddit clone built using ruby on rails.',
     artURL: 'assets/images/bloccit.jpg',
-    pageURL: 'portfolio.html?bloccit'
+    pageURL: 'portfolio.html?bloccit',
+		siteURL: 'https://mikesbloccit.herokuapp.com'
 }
 
 var itemTwo = {
     title: 'Bloc-Jams-Angular',
     description: 'A music app built using angular.',
     artURL: 'assets/images/angular-jams.png',
-    pageURL: 'portfolio.html?angularjams'
+    pageURL: 'portfolio.html?angularjams',
+		siteURL: 'https://angular-jams.herokuapp.com/'
 }
 
 var itemThree = {
     title: 'Pong',
     description: 'Pong made with javascript animations.',
     artURL: 'assets/images/pong.jpg',
-    pageURL: 'portfolio.html?pong'
+    pageURL: 'portfolio.html?pong',
+		siteURL: 'http://mikespong.surge.sh/'
 }
 
 var itemFour = {
     title: 'Bloc-Jams',
     description: 'A digital music player built with jQuery, javascript, html and css.',
     artURL: 'assets/images/bloc-jams.png',
-    pageURL: 'portfolio.html?jams'
+    pageURL: 'portfolio.html?jams',
+		siteURL: 'http://the-bloc-jams.netlify.com/'
 }
 
 var itemFive = {
 		title: 'Five',
-    description: 'Lorem ipsum dolor sit amet, usu at aliquip consequat posidonium, possim eruditi dignissim vim ad. Ut sea verear expetenda maluisset, no mollis dolores conclusionemque mel.',
+    description: 'Ut sea verear expetenda maluisset, no mollis dolores conclusionemque mel.',
     artURL: 'assets/images/thumbs/5.png',
-    pageURL: 'portfolio.html?0'
+    pageURL: 'portfolio.html?5',
+		siteURL: 'http://ratedimages.herokuapp.com/'
 }
 
 var itemSix = {
     title: 'Six',
-    description: 'Lorem ipsum dolor sit amet, usu at aliquip consequat posidonium, possim eruditi dignissim vim ad. Ut sea verear expetenda maluisset, no mollis dolores conclusionemque mel. Duo in quaestio delicata. Quo ut propriae tractatos consequat, at vix porro dolores mandamus.',
+    description: 'Lorem ipsum dolor sit amet, usu at aliquip consequat posidonium, possim eruditi dignissim vim ad.',
     artURL: 'assets/images/thumbs/6.png',
-    pageURL: 'portfolio.html?0'
+    pageURL: 'portfolio.html?0',
+		siteURL: 'https://hashsearch.herokuapp.com/twitter.php'
 }
 
 var items = [itemOne, itemTwo, itemThree, itemFour, itemFive, itemSix];
@@ -80,6 +86,7 @@ var changeItems = function(){
     $('h1.portfolio').text(items[middleItem].title);
     $('h2.portfolio').text(items[middleItem].description);
 		$('.portfolio-img').attr("src", items[middleItem].artURL);
+		$('.portfolio-img').attr("href", items[middleItem].siteURL);
 }
 
 var last = function(){
@@ -133,9 +140,9 @@ var lastLink = function () {
 
 var setActive = function(){
 	
-		console.log("Hey");
+		console.log(getit);
     
-    if (getit == "Bloccit" || getit)
+    if (getit == "Bloccit" || getit === "undefined")
     {
         lastItem = 1;
     }
@@ -151,9 +158,13 @@ var setActive = function(){
     {
         lastItem = 4;
     }
-    else {
+		else if(getit == "5" || getit == "0")
+    {
         lastItem = getit;
-			
+    }
+    else {
+        lastItem = 1;
+			console.log(getit);
     }
 }
 

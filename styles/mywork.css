@@ -60,6 +60,7 @@ a {
 .container {
   margin-left: 125px;
   max-width: 1200px;
+	margin-top: 20px;
 }
 
 .cell {
@@ -89,12 +90,16 @@ a {
 
 }
 
-@media (max-width: 600px) {
+@media (max-width: 599px) {
 
 	.container {
   		margin-left: 10px;
 			margin-top: 65px;
 		}
+	
+	.cell {
+        width: 95%;
+    }
 
 }
 

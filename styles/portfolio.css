@@ -42,7 +42,7 @@ h2.portfolio {
     justify-content: center;
     color: black;
     position:absolute;
-    top: 20%;
+    top: 27%;
     height:37%;
     width: 80%;
     left:10%;
@@ -52,7 +52,6 @@ h2.portfolio {
   position: fixed;
 	width: 200px;
 	height: 200px;
-  top: 50%;
   left: 50%;  
 	transform: translate(-50%, -50%);
 	-webkit-transform:translate(-50%, -50%); 
@@ -75,15 +74,15 @@ h2.portfolio {
 
 .mobile-nav {
     display: block;
-    color: white;
+		color:gb(3, 150, 252);
 }
 
 .mobile-nav:hover {
-    color:rgb(3, 150, 252);    
+      color: rgb(3, 150, 252);
 }
 
 .sphere-mask {
-    background-color: rgb(3, 150, 252)
+    background-color: white;
 }
 
 .sphere-mask:hover {
@@ -96,7 +95,7 @@ ul.portfolio  {
     justify-content: center;
     list-style-type: none;
     margin: 0;
-    background-color: #333;
+    background-color: rgb(3, 150, 252);
     position: fixed;
     bottom:0;
     height: 150px;
@@ -145,7 +144,7 @@ li a.portfolio:hover:not(.active) {
 
 
 	.portfolio-img {
-		top: 60%;
+		top: 55%;
 		height: 150px;
 		width: 150px;
 	}
@@ -153,31 +152,30 @@ li a.portfolio:hover:not(.active) {
 
 }
 
-@media (max-height: 650px) {
+@media (max-height: 580px) {
 
 
-	.portfolio-img {
+	/*
+	heeeeeeeere
+	heeeeeeeere
+	heeeeeeeere
+	heeeeeeeere
+	heeeeeeeere
+	*/
 	
-	}
-	
-
-}
-
-
-@media (max-height: 500px) {
 	ul.portfolio {
-	display: none;
-	}
-
-	.portfolio-img {
-		top: 70%;
+		display: none;
 	}
 	
 	h2.portfolio {
-		top: 30%;
+		top: 25%;
 
 	}
+
 }
+
+
+
 
 
 @media (max-width: 620px) {
