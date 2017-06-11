@@ -15,7 +15,7 @@ var itemOne = {
 }
 
 var itemTwo = {
-    title: 'Bloc-Jams-Angular',
+    title: 'Angular Jams',
     description: 'A music app built using angular.',
     artURL: 'assets/images/angular-jams.png',
     pageURL: 'portfolio.html?angularjams',
@@ -23,11 +23,11 @@ var itemTwo = {
 }
 
 var itemThree = {
-    title: 'Pong',
-    description: 'Pong made with javascript animations.',
-    artURL: 'assets/images/pong.jpg',
-    pageURL: 'portfolio.html?pong',
-		siteURL: 'http://mikespong.surge.sh/'
+    title: 'HTMLShare',
+    description: 'A collaborative HTML editing tool built using meteor.',
+    artURL: 'assets/images/thumbs/3.png',
+    pageURL: 'portfolio.html?htmlshare',
+		siteURL: 'http://htmlshare.herokuapp.com/'
 }
 
 var itemFour = {
@@ -39,11 +39,11 @@ var itemFour = {
 }
 
 var itemFive = {
-		title: 'Five',
-    description: 'Ut sea verear expetenda maluisset, no mollis dolores conclusionemque mel.',
-    artURL: 'assets/images/thumbs/5.png',
-    pageURL: 'portfolio.html?5',
-		siteURL: 'http://ratedimages.herokuapp.com/'
+		title: 'Pong',
+    description: 'Pong made with javascript animations.',
+    artURL: 'assets/images/pong.jpg',
+    pageURL: 'portfolio.html?pong',
+		siteURL: 'http://mikespong.surge.sh/'
 }
 
 var itemSix = {
@@ -139,8 +139,6 @@ var lastLink = function () {
 }
 
 var setActive = function(){
-	
-		console.log(getit);
     
     if (getit == "Bloccit" || getit === "undefined")
     {
@@ -150,7 +148,7 @@ var setActive = function(){
     {
         lastItem = 2;
     }
-	else if(getit == "Pong")
+	else if(getit == "HTMLShare")
     {
         lastItem = 3;
     }
@@ -158,13 +156,17 @@ var setActive = function(){
     {
         lastItem = 4;
     }
-		else if(getit == "5" || getit == "0")
+		else if(getit == "Pong")
+    {
+        lastItem = 5;
+    }
+		else if(getit == "0")
     {
         lastItem = getit;
     }
     else {
         lastItem = 1;
-			console.log(getit);
+			
     }
 }
 
