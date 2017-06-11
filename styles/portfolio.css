@@ -97,7 +97,7 @@ ul.portfolio  {
     justify-content: center;
     list-style-type: none;
     margin: 0;
-    background-color: rgb(3, 150, 252);
+    background-image: url(/assets/images/blue.jpg);
     position: fixed;
     bottom:0;
     height: 150px;
