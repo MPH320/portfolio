@@ -1,8 +1,10 @@
 
-
 html {    
   height:100%;
   background-color: rgb(40, 40, 40);
+  font-family: 'Josefin Sans', sans-serif;
+	background-image: url("/assets/images/index.jpg");
+  background-repeat: repeat-y;
 }
 
 #feedback-page {
