@@ -8,7 +8,7 @@ getit = unescape(getit[1]);
 
 var itemOne = {
     title: 'Bloccit',
-    description: 'Reddit clone built using ruby on rails.',
+    description: 'Reddit clone built using Ruby on Rails.',
     artURL: 'assets/images/bloccit.jpg',
     pageURL: 'portfolio.html?bloccit',
 		siteURL: 'https://mikesbloccit.herokuapp.com'
@@ -16,7 +16,7 @@ var itemOne = {
 
 var itemTwo = {
     title: 'Angular Jams',
-    description: 'A music app built using angular.',
+    description: 'A music app built using Angular.',
     artURL: 'assets/images/angular-jams.png',
     pageURL: 'portfolio.html?angularjams',
 		siteURL: 'https://angular-jams.herokuapp.com/'
@@ -24,34 +24,35 @@ var itemTwo = {
 
 var itemThree = {
     title: 'HTMLShare',
-    description: 'A collaborative HTML editing tool built using meteor.',
-    artURL: 'assets/images/thumbs/3.png',
+    description: 'A collaborative HTML editing tool built using Meteor.',
+    artURL: 'assets/images/htmlshare.jpg',
     pageURL: 'portfolio.html?htmlshare',
 		siteURL: 'http://htmlshare.herokuapp.com/'
 }
 
 var itemFour = {
-    title: 'Bloc-Jams',
+	title: 'Tweet Search',
+    description: 'A tweet searcher built using PHP and Codebird to accesss the Twitter API.',
+    artURL: 'assets/images/ts.jpg',
+    pageURL: 'portfolio.html?tweetsearch',
+		siteURL: 'http://tweetsearchphp.herokuapp.com/'
+}
+
+var itemFive = {
+		title: 'Bloc-Jams',
     description: 'A digital music player built with jQuery, javascript, html and css.',
     artURL: 'assets/images/bloc-jams.png',
     pageURL: 'portfolio.html?jams',
 		siteURL: 'http://the-bloc-jams.netlify.com/'
 }
 
-var itemFive = {
-		title: 'Pong',
+var itemSix = {
+	title: 'Pong',
     description: 'Pong made with javascript animations.',
     artURL: 'assets/images/pong.jpg',
     pageURL: 'portfolio.html?pong',
 		siteURL: 'http://mikespong.surge.sh/'
-}
-
-var itemSix = {
-    title: 'Six',
-    description: 'Lorem ipsum dolor sit amet, usu at aliquip consequat posidonium, possim eruditi dignissim vim ad.',
-    artURL: 'assets/images/thumbs/6.png',
-    pageURL: 'portfolio.html?0',
-		siteURL: 'https://hashsearch.herokuapp.com/twitter.php'
+    
 }
 
 var items = [itemOne, itemTwo, itemThree, itemFour, itemFive, itemSix];
@@ -152,17 +153,17 @@ var setActive = function(){
     {
         lastItem = 3;
     }
-	 else if(getit == "Jams")
+	 else if(getit == "TweetSearch")
     {
         lastItem = 4;
     }
-		else if(getit == "Pong")
+		else if(getit == "Jams")
     {
         lastItem = 5;
     }
-		else if(getit == "0")
+		else if(getit == "Pong")
     {
-        lastItem = getit;
+        lastItem = 0;
     }
     else {
         lastItem = 1;
