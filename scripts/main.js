@@ -18,6 +18,14 @@ var addSpans = function(thing)
     );
 }
 
+var sendEmail = function() {
+	var text = $("textarea[name='text']").val();
+	var email = $("input[name='email']").val();
+	var senderName = $("input[name='name']").val();
+	
+	emailjs.send("gmail","template_dnkogWqP",{name: senderName, notes: text, email: email});
+};
+
 $(document).ready(function() 
 {
     var $textToAnimate = $(".animated-text");

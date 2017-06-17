@@ -3,13 +3,16 @@ html {
   height:100%;
   background-color: rgb(40, 40, 40);
   font-family: 'Josefin Sans', sans-serif;
-	background-image: url("/assets/images/index.jpg");
+	background-image: url("index.jpg");
   background-repeat: repeat-y;
 }
 
 #feedback-page {
 	text-align:center;
-    
+}
+
+contact-button{
+	color: white;
 }
 
 #form-main {
@@ -64,7 +67,7 @@ html {
 #name {
     border: 1px solid rgb(3, 150, 252);
 	
-	background-image: url(/assets/images/icons/person.png);
+	background-image: url(person.png);
 	background-size: 30px 30px;
 	background-position: 11px 8px;
 	background-repeat: no-repeat;
@@ -80,7 +83,7 @@ html {
 }
 
 #name:focus {
-	background-image: url(/assets/images/icons/person.png);
+	background-image: url(person.png);
 	background-size: 30px 30px;
 	background-position: 8px 5px;
     background-position: 11px 8px;
@@ -90,7 +93,7 @@ html {
 #email {
     border-radius: 5px;
     border: 1px solid rgb(3, 150, 252);
-	background-image: url(/assets/images/icons/email.png);
+	background-image: url(email.png);
 	background-size: 30px 30px;
 	background-position: 11px 8px;
 	background-repeat: no-repeat;
@@ -105,7 +108,7 @@ html {
 }
 
 #email:focus {
-	background-image: url(/assets/images/icons/email.png);
+	background-image: url(email.png);
 	content: "\f087";
 	background-size: 30px 30px;
   background-position: 11px 8px;
@@ -115,7 +118,7 @@ html {
 #comment {
     border-radius: 5px;
     border: 1px solid rgb(3, 150, 252);
-	background-image: url(/assets/images/icons/pen.png);
+	background-image: url(pen.png);
 	background-size: 30px 30px;
 	background-position: 11px 8px;
 	background-repeat: no-repeat;
