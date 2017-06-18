@@ -24,6 +24,8 @@ var sendEmail = function() {
 	var senderName = $("input[name='name']").val();
 	
 	emailjs.send("gmail","template_dnkogWqP",{name: senderName, notes: text, email: email});
+	$("#form-main").hide();
+	$(".thanks").css("display","block");
 };
 
 $(document).ready(function() 

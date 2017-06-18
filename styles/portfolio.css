@@ -1,6 +1,6 @@
 body {
     font-family: 'Josefin Sans', sans-serif;
-		background-image: url("/assets/images/portfolio.jpg");
+		background-image: url("index.jpg");
    	background-repeat: repeat-y;
 }
 
@@ -10,7 +10,7 @@ body {
     left:20px;
     width:40px;
     height:40px;
-    background:rgb(3, 150, 252);
+    background:rgb(115, 115, 115);
     border-radius:50%;
     position:absolute;
     font-size: 1.5em;
@@ -23,13 +23,13 @@ body {
 
 .home:hover {
     background:black;
-    color:rgb(3, 150, 252);;
+    color:rgb(115, 115, 115);
 }
 
 h1.portfolio {
     display: flex;
     justify-content: center;
-    color: rgb(3, 150, 252);
+    color: rgb(115, 115, 115);
     font-size: 4em;
     position:absolute;
     top: 10%;
@@ -42,7 +42,7 @@ h2.portfolio {
     display: flex;
     font-size: 1.5em;
     justify-content: center;
-    color: black;
+    color: rgb(115, 115, 115);
     position:absolute;
     top: 27%;
     height:37%;
@@ -76,11 +76,11 @@ h2.portfolio {
 
 .mobile-nav {
     display: block;
-		color:gb(3, 150, 252);
+		color: black;
 }
 
 .mobile-nav:hover {
-      color: rgb(3, 150, 252);
+      color: white;
 }
 
 .sphere-mask {
@@ -88,7 +88,7 @@ h2.portfolio {
 }
 
 .sphere-mask:hover {
-    background-color: black;
+    background-color: rgb(115, 115, 115);
 }
 
 ul.portfolio  {
@@ -97,7 +97,7 @@ ul.portfolio  {
     justify-content: center;
     list-style-type: none;
     margin: 0;
-    background-image: url(/assets/images/blue.jpg);
+ 		background-color: white;
     position: fixed;
     bottom:0;
     height: 150px;
@@ -120,9 +120,6 @@ li a.portfolio:hover:not(.active) {
     background-color: #111;
 }
 
-.active .portfolio {
-    background-color: #4CAF50;
-}
 
 .last{
     margin-left: -28px;
@@ -133,7 +130,7 @@ li a.portfolio:hover:not(.active) {
 }
 
 .next, .last {
-    color: white;
+    color: black;
     position:absolute;
     display: flex;
     justify-content: center;
@@ -155,15 +152,6 @@ li a.portfolio:hover:not(.active) {
 }
 
 @media (max-height: 580px) {
-
-
-	/*
-	heeeeeeeere
-	heeeeeeeere
-	heeeeeeeere
-	heeeeeeeere
-	heeeeeeeere
-	*/
 	
 	ul.portfolio {
 		display: none;

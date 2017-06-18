@@ -4,7 +4,15 @@ html {
   background-color: rgb(40, 40, 40);
   font-family: 'Josefin Sans', sans-serif;
 	background-image: url("index.jpg");
-  background-repeat: repeat-y;
+}
+
+.thanks {
+	display:none;
+	margin-top:10%;
+	left: 20%;
+	position: absolute;
+	color:white;
+	font-size: 4em;
 }
 
 #feedback-page {
@@ -21,13 +29,12 @@ contact-button{
 }
 
 #form-div {
-    margin-top:50px;
+
+  margin-top:10%;
 	width: 450px;
 	float: left;
-	left: 40%;
+	right: 25%;
 	position: absolute;
-    -moz-border-radius: 7px;
-    -webkit-border-radius: 7px;
 }
 
 .feedback-input { 
@@ -35,7 +42,6 @@ contact-button{
 	font-family: Helvetica, Arial, sans-serif;
     font-weight:500;
 	font-size: 18px;
-	border-radius: 0;
 	line-height: 22px;
 	background-color: #fbfbfb;
 	padding: 13px 13px 13px 54px;
@@ -51,27 +57,26 @@ contact-button{
 .feedback-input:focus {
 	background: #fff;
 	box-shadow: 0;
-	border: 3px solid #3498db;
-	color: #3498db;
+	border: 3px solid rgb(115, 115, 115);
+	color: rgb(115, 115, 115);
 	outline: none;
     padding: 13px 13px 13px 54px;
 }
 
 .focused {
-	color:#30aed6;
-	border:#30aed6 solid 3px;
+	color:rgb(115, 115, 115);
+	border:rgb(115, 115, 115) solid 3px;
 }
 
 /* Icons ---------------------------------- */
 
 #name {
-    border: 1px solid rgb(3, 150, 252);
+    border: 1px solid rgb(115, 115, 115);
 	
 	background-image: url(person.png);
 	background-size: 30px 30px;
 	background-position: 11px 8px;
 	background-repeat: no-repeat;
-    border-radius: 5px;
 }
 
 #name:hover {
@@ -91,8 +96,8 @@ contact-button{
 }
 
 #email {
-    border-radius: 5px;
-    border: 1px solid rgb(3, 150, 252);
+
+    border: 1px solid rgb(115, 115, 115);
 	background-image: url(email.png);
 	background-size: 30px 30px;
 	background-position: 11px 8px;
@@ -109,15 +114,14 @@ contact-button{
 
 #email:focus {
 	background-image: url(email.png);
-	content: "\f087";
 	background-size: 30px 30px;
   background-position: 11px 8px;
 	background-repeat: no-repeat;
 }
 
 #comment {
-    border-radius: 5px;
-    border: 1px solid rgb(3, 150, 252);
+
+    border: 1px solid rgb(115, 115, 115);
 	background-image: url(pen.png);
 	background-size: 30px 30px;
 	background-position: 11px 8px;
@@ -144,65 +148,56 @@ input:focus, textarea:focus {
 	background-color:white;
 }
 
-
-
 #button-blue {
-    border-radius: 1px;
+	color: rgb(115, 115, 115);
+	border: 2px solid rgb(115, 115, 115);
+	font-weight: bolder;
+	font-size: 1.2em;
+	background-color: rgb(245,245,245);
 	float:left;
 	width: 100%;
-	border: #fbfbfb solid 4px;
-    cursor:pointer;
-	background-color: #3498db;
-	color:white;
-	font-size:24px;
-	padding-top:22px;
-	padding-bottom:22px;
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	transition: all 0.3s;
-    font-weight:700;
-    margin-top:-3px;
-    -webkit-appearance: none;
-    -webkit-border-radius: 0;
+	cursor:pointer;
+
+	-webkit-transition:-webkit-transform 0.1s,opacity 0.1s,background 0.1s,width 0.1s,height 0.1s,font-size 0.1s;
+	-o-transition-property:width,height,-o-transform,background,font-size,opacity,color;
+	-o-transition-duration:0.1s,0.1s,0.1s,0.1s,0.1s,0.1s,0.1s;
+	-moz-transition-property:width, height, -moz-transform, background, font-size, opacity, color;
+	-moz-transition-duration:0.1s,0.1s,0.1s,0.1s,0.1s,0.1s,0.1s;
+	transition-property:width,height,transform,background,font-size,opacity;
+	transition-duration:0.1s,0.1s,0.1s,0.1s,0.1s,0.1s,0.1s;
+
+	box-shadow:0 0 2px rgba(0,0,0,0.5);
+	text-shadow:0 0 5px rgba(255,255,255,0.5);
+	display:inline-block;   
+	padding-top:12.5px;
+	padding-bottom:12.5px;
 }
 
 #button-blue:hover {
-	background-color: rgba(0,0,0,0);
-	color: #0493bd;
-}
-	
-.submit:hover {
-	color: #0493bd;
-    background-color: rgba(0,0,0,0);
-}
-	
-.ease {
-	width: 0px;
-	height: 75px;
-	background-color: #fbfbfb;
-	-webkit-transition: .3s ease;
-	-moz-transition: .3s ease;
-	-o-transition: .3s ease;
-	-ms-transition: .3s ease;
-	transition: .3s ease;
+	 background-color: rgb(115, 115, 115);
+    color: rgb(245,245,245);
+    transform:scale(.98,.98); 
+    -webkit-transform:scale(.98,.98);
+    -moz-transform:scale(.98,.98); 
+    -ms-transform:scale(.98,.98); 
+    -o-transform:scale(.98,.98); 
+		border: 2px solid white;
 }
 
-.submit:hover .ease {
-  width:100%;
-  background-color:white;
-}
+
 
 .mobile-nav-wrapper {
     z-index: 1;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 750px) {
 	#form-div {
-	   left: 37.5%;
-		width: 60%;
-        margin-top:50px;
+	    right: 5%;
+		width: auto;
 	}
 }
+
+
 
 @media (max-height: 530px) {
     #name {
@@ -216,17 +211,18 @@ input:focus, textarea:focus {
     }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 600px) {
     .mobilenav {
         display: none;
     }
-    
-    #form-div {
-        left: 10%;
-        width: 80%;
-        margin-top:10%;
+	
+	#form-div {
+	    left: 5%;
+		width: auto;
 	}
 }
+
+
 
 @media (max-width: 185px) {
     ::-webkit-input-placeholder {
@@ -245,3 +241,4 @@ input:focus, textarea:focus {
         color:white;
     }   
 }
+
