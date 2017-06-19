@@ -1,7 +1,8 @@
-body {
+html {
+		height:100%;
+		background-color: rgb(40, 40, 40);
     font-family: 'Josefin Sans', sans-serif;
 		background-image: url("index.jpg");
-   	background-repeat: repeat-y;
 }
 
 .home {
@@ -10,11 +11,11 @@ body {
     left:20px;
     width:40px;
     height:40px;
-    background:rgb(115, 115, 115);
+    background:white;
     border-radius:50%;
     position:absolute;
     font-size: 1.5em;
-    color: white;
+    color: black;
     text-align:center;
     cursor:pointer;
     position:fixed;
@@ -22,7 +23,7 @@ body {
 }
 
 .home:hover {
-    background:black;
+    background:white;
     color:rgb(115, 115, 115);
 }
 
@@ -80,7 +81,7 @@ h2.portfolio {
 }
 
 .mobile-nav:hover {
-      color: white;
+      color: rgb(115, 115, 115);
 }
 
 .sphere-mask {
@@ -89,6 +90,7 @@ h2.portfolio {
 
 .sphere-mask:hover {
     background-color: rgb(115, 115, 115);
+		color:white;
 }
 
 ul.portfolio  {
@@ -97,7 +99,7 @@ ul.portfolio  {
     justify-content: center;
     list-style-type: none;
     margin: 0;
- 		background-color: white;
+ 	
     position: fixed;
     bottom:0;
     height: 150px;
@@ -130,7 +132,7 @@ li a.portfolio:hover:not(.active) {
 }
 
 .next, .last {
-    color: black;
+    color: white;
     position:absolute;
     display: flex;
     justify-content: center;
