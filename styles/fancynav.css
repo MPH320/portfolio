@@ -71,8 +71,14 @@ html {
     }
 }
 
-@media ( max-height: 150px ){
+@media ( max-height: 65px ){
      .mobile-nav {
+        display: none;
+    }
+}
+
+@media (min-height: 65px) and (max-width: 215px) {
+  .mobile-nav {
         display: none;
     }
 }

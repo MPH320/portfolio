@@ -75,7 +75,7 @@ a:hover .work-text, a:hover .home-text, a:hover .contact-text {
 .contact-Button {
     position: fixed;
     bottom: 10%;
-    right: 10%;
+    right: 12.5%;
     color: rgb(115, 115, 115);
     width: 130px;
     height: 50px;
@@ -112,7 +112,7 @@ a:hover .work-text, a:hover .home-text, a:hover .contact-text {
     font-size: 4em;
     position: fixed;
     top: 1%;
-    left: 10%;
+    left: 40%;
 		color:white;
 }
 
@@ -237,6 +237,7 @@ a:hover .work-text, a:hover .home-text, a:hover .contact-text {
 .animated-text.hidden {
     display: none;
 		color:white;
+	top: 45%;
 }
 
 
@@ -252,20 +253,12 @@ a:hover .work-text, a:hover .home-text, a:hover .contact-text {
     }
 }
 
-@media ( max-width: 1000px ){
-    .greeting > h1{
-        left: 60%;
-    }
-}
 
 @media ( max-width: 500px ){    
-    .greeting > h1{
-        top: -5%;
-        left: 40%;
-    }
+
     
     .greeting > h2{
-        bottom: 65%;
+        bottom: 55%;
         right: 20%;
     }
     
@@ -274,10 +267,6 @@ a:hover .work-text, a:hover .home-text, a:hover .contact-text {
 
 
 @media ( max-width: 400px ){
-    .greeting > h1{
-      	top: -4%;
-
-    }
     
     .greeting > h2{
         display: none;
@@ -290,13 +279,7 @@ a:hover .work-text, a:hover .home-text, a:hover .contact-text {
   
 }
 
-@media ( max-height: 600px ){
-  
-    
-    .animated-text.hidden {
-        top: 45%;
-    }
-}
+
 
 @media ( max-height: 360px ){
     .greeting > h2{
@@ -327,12 +310,6 @@ a:hover .work-text, a:hover .home-text, a:hover .contact-text {
 @media ( max-height: 220px ){
     .greeting > h1{
          display: none;
-    }
-}
-
-@media ( max-width: 200px ){
-    .contact-Button {
-        right: 7.5%;
     }
 }
 
@@ -401,4 +378,32 @@ a:hover .work-text, a:hover .home-text, a:hover .contact-text {
 	.animated-text.hidden {
         display: block;
     } 
+}
+
+@media ( max-width: 250px ){
+	
+	.animated-text.hidden {
+        display: none ;
+    }  
+}
+
+@media ( max-width: 155px ){
+	
+	.contact-Button {
+        display: none ;
+    }  
+}
+
+@media ( max-width: 140px ){
+	
+	.greeting > h1 {
+        display: none ;
+    }  
+}
+
+@media ( max-height: 65px ){
+	
+	.contact-Button {
+        display: none ;
+    }  
 }
