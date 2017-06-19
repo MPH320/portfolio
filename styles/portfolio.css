@@ -30,7 +30,7 @@ html {
 h1.portfolio {
     display: flex;
     justify-content: center;
-    color: rgb(115, 115, 115);
+    color: white;
     font-size: 4em;
     position:absolute;
     top: 10%;
@@ -43,7 +43,7 @@ h2.portfolio {
     display: flex;
     font-size: 1.5em;
     justify-content: center;
-    color: rgb(115, 115, 115);
+    color: white;
     position:absolute;
     top: 27%;
     height:37%;
